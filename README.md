@@ -2,6 +2,20 @@
 with submodule usage. since some what fastapi not happy!!?
 
 [Bigger Project](https://fastapi.tiangolo.com/tutorial/bigger-applications/)
+```
+.
+├── app                  # "app" is a Python package
+│   ├── __init__.py      # this file makes "app" a "Python package"
+│   ├── main.py          # "main" module, e.g. import app.main
+│   ├── dependencies.py  # "dependencies" module, e.g. import app.dependencies
+│   └── routers          # "routers" is a "Python subpackage"
+│   │   ├── __init__.py  # makes "routers" a "Python subpackage"
+│   │   ├── items.py     # "items" submodule, e.g. import app.routers.items
+│   │   └── users.py     # "users" submodule, e.g. import app.routers.users
+│   └── internal         # "internal" is a "Python subpackage"
+│       ├── __init__.py  # makes "internal" a "Python subpackage"
+│       └── admin.py     # "admin" submodule, e.g. import app.internal.admin
+```
 
 [Credit from Meduim @amirm.lavasani](https://medium.com/@amirm.lavasani/how-to-structure-your-fastapi-projects-0219a6600a8f)
 
